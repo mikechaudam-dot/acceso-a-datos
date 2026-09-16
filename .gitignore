@@ -1,0 +1,55 @@
+gitignore - eclipse 
+
+# ---- Archivos compilados ----
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+# ---- Carpetas de salida de Eclipse ----
+bin/
+target/
+build/
+out/
+
+# ---- Metadatos de Eclipse ----
+.settings/
+.project
+.classpath
+.metadata/
+
+# ---- Archivos de Eclipse ----
+*.launch
+
+# ---- Archivos de IntelliJ IDEA ----
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ---- Logs ----
+*.log
+
+# ---- Archivos del sistema operativo ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Dependencias descargadas ----
+lib/
+libs/
+*.jar
+
+# ---- Maven (para más adelante) ----
+.mvn/
+mvnw
+mvnw.cmd
+
+# ---- Gradle (para más adelante) ----
+.gradle/
+gradlew
+gradlew.bat
+
+# ---- Entornos de desarrollo ----
+.vscode/
