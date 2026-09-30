@@ -13,7 +13,7 @@ public class CentroExportaciones {
 
 	public static void main(String[] args) throws IOException {
 		
-		//Creamos la ruta FORMA ERRONE si lo que queremos es crear una ruta de varios directorios 
+		//Creamos la ruta FORMA ERRONEA si lo que queremos es crear una ruta de varios directorios 
 		/*
 		Path dir1 = Path.of("centro");
 		Path dir2 = Path.of("2026");
