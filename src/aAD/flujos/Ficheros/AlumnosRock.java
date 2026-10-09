@@ -11,27 +11,34 @@ public class AlumnosRock {
 
 	public static void main(String[] args) {
 		
+		//Obtenemos la ruta con el operador .get
 		Path ruta = Paths.get("Alumnos.csv");
 		
-		try(BufferedReader lector = Files.newBufferedReader(ruta, StandardCharsets.UTF_8)){
-			
-			String linea = "";
-			
-			System.out.println("===== Inicio de lectura Rockeritos =====");
-			
-			while ((linea = lector.readLine()) != null) {
-                System.out.println(linea);
-            }
-			
-			System.out.println("<<<<<<<< Lectura de lineas finalizadas >>>>>>>>>");
-
-		}catch(IOException e) {
-			System.out.println("Error al leer el archivo " + e.getMessage());
-			
-		}
+		leerFichero(ruta);
 		
-		
-
 	}
 
+	public static void leerFichero(Path ruta) {
+
+		// Definimos un String para coger las lineas
+		String linea;
+
+		try (BufferedReader lector = Files.newBufferedReader(ruta, StandardCharsets.UTF_8)) {
+
+			System.out.println("===== Inicio de lectura Rockeritos =====");
+
+			while ((linea = lector.readLine()) != null) {
+				System.out.println(linea);
+			}
+
+			System.out.println("<<<<<<<< Lectura de lineas finalizadas >>>>>>>>>");
+
+		} catch (IOException e) {
+			System.out.println("Error al leer el archivo " + e.getMessage());
+
+		}
+	}
 }
+
+
+
